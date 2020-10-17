@@ -14,6 +14,7 @@ void loop() {
   //digitalWrite(led, LOW);       // 초기 LED값을 0FF로 설정해주기
  
   if (state != 1){              // 불꽃감지 센서의 값이 1이 아닐때(불꽃이 감지 되었을 때)
+  //센서가 살짝 출력값이 다를수도 있음 
     Serial.println("ON");       // 시리얼 통신에 센서값 출력해 주기.
     //digitalWrite(led, HIGH);    // LED ON
     delay(100);                

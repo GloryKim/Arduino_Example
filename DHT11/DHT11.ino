@@ -1,7 +1,8 @@
-#include "DHT.h"
+#include "DHT.h" //dht 관련 오류가 나오면 라이브러리 팝업창에서 dht.h 를 설치해주면 된다.
+//Mac 기준 Tool->management library..->dht검색->라이브러리 설치 폴더내에서 헤더파일 생성된것 확
 
 #define DHTPIN 7     // DHT11이 연결된 핀
-
+인
 #define DHTTYPE DHT11   // DHT 11, DHT시리즈중 11을 선택합니다.
 
 DHT dht(DHTPIN, DHTTYPE);
@@ -10,7 +11,7 @@ void setup() {
   Serial.begin(9600);
   Serial.println("DHT11 test!");
 
-  dht.begin();
+  dht.begin();후
 }
 
 void loop() {
