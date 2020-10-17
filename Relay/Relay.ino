@@ -27,5 +27,5 @@ void loop(){
 /*
 릴레이에는 GND VCC는 연결하고 이걸 온오프할 선은 따로있다.
 반대편에서 VCC와 GND를 가져와 연결해서 하면 된다.
-
+참고 링크 : http://blog.naver.com/PostView.nhn?blogId=elepartsblog&logNo=221358322401&parentCategoryNo=&categoryNo=34&viewDate=&isShowPopularPosts=false&from=postView
 */
