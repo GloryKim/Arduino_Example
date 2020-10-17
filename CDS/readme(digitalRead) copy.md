@@ -1,0 +1,37 @@
+digitalRead()
+[Digital I/O]
+설명
+지정한 디지털 핀에서 값(HIGH 또는 LOW)을 읽습니다.
+
+문법
+digitalRead(pin)
+
+매개변수
+pin: 읽으려는 디지털 핀 번호
+
+반환
+HIGH 또는 LOW
+
+예제 코드
+핀 13을 입력으로 선언된 핀 7과 같은 값으로 설정
+
+int ledPin = 13;  // LED는 디지털 핀 13에 연결됨
+int inPin = 7;    // pushbutton은 디지털 핀 7에 연결됨
+int val = 0;      // 읽은 값을 저장할 변수
+
+void setup() {
+  pinMode(ledPin, OUTPUT);    //디지털 핀 13을 출력으로 설정
+  pinMode(inPin, INPUT);      // 디지털 7을 입력으로 설정
+}
+
+void loop() {
+  val = digitalRead(inPin);   // 입력 핀으로부터 읽기
+  digitalWrite(ledPin, val);  // LED 를 버튼의 값으로 설정
+}
+주의와 경고
+핀이 아무데도 연결되지 않으면, digitalRead()은 HIGH나 LOW 중 아무 값이나 임의로 반환할 수 있습니다.
+
+A0, A1 등의 아날로그 입력 핀은 디지털 핀으로 쓰일 수 있습니다.
+
+
+출처 : https://www.arduino.cc/reference/ko/language/functions/digital-io/digitalread/
