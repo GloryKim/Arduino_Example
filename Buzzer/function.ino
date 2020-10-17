@@ -18,48 +18,47 @@
 
 #define DELAY 300 //딜레이 값 선언
 
+    ​
+
+    int music[] = {SO, SO, LA, LA, SO, SO, MI, SO, SO, MI, MI, RE,
+
+                   SO, SO, LA, LA, SO, SO, MI, SO, MI, RE, MI, DO}; //음계 배열
+
 ​
 
-int music[] = {SO,SO,LA,LA,SO,SO,MI,SO,SO,MI,MI,RE,
+    void
+    setup()
 
-SO,SO,LA,LA,SO,SO,MI,SO,MI,RE,MI,DO}; //음계 배열
+        {
+
+            ​
+
+        }
 
 ​
 
-void setup()
+    void loop()
+
+        ​
 
 {
 
-​
-
+    music_play();
 }
 
 ​
 
-void loop()
-
-​
-
-{
-
-music_play();
-
-}
-
-​
-
-void music_play() //멜로디 재생
+    void
+    music_play() //멜로디 재생
 
 {
 
-for(int i = 0; i < sizeof(music)/sizeof(int); i++)
+    for (int i = 0; i < sizeof(music) / sizeof(int); i++)
 
-{
+    {
 
-tone(BUZ_PIN, music[i] * 2, 100);
+        tone(BUZ_PIN, music[i] * 2, 100);
 
-delay(DELAY);
-
-}
-
+        delay(DELAY);
+    }
 }
