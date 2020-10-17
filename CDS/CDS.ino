@@ -1,8 +1,8 @@
 int cds = A0;
 
 void setup() {
-    Serial.begin(9600); // Serial 통신을 초기화 합니다.
-    pinMode(cds,INPUT);
+    Serial.begin(9600); // Serial 통신을 초기화 합니다. //Serial이 궁금하면 readme!
+    pinMode(cds,INPUT);//pinMode가 궁금하면 readme!
 }
 
 void loop() {
