@@ -11,7 +11,7 @@ void setup() {
   Serial.begin(9600);
   Serial.println("DHT11 test!");
 
-  dht.begin();후
+  dht.begin();
 }
 
 void loop() {
