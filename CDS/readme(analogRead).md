@@ -33,5 +33,4 @@ void loop() {
 아날로그 입력 핀이 아무데도 연결되지 않으면, analogRead()가 반환하는 값은 여러 요인(e.g. 다른 아날로그 입력 값, 여러분의 손이 보드에 얼마나 가까운가 등)에 따라 변합니다.
 
 
-
 출처 : https://www.arduino.cc/reference/ko/language/functions/analog-io/analogread/
